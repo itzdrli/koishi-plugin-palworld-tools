@@ -1,4 +1,4 @@
-import { Context, Schema } from 'koishi'
+import { Context, Schema,h } from 'koishi'
 
 export const name = 'palworld-tools'
 
@@ -30,8 +30,9 @@ export function apply(ctx: Context) {
     adddate: 'timestamp',
   })
 
-const plugin_id = "d7a4544c-1275-405c-b6c3-32c9164a4319"
+ctx.command('服务器列表')  .action(({ session }) => {
+  var list = ctx.database.get('palworld_serverlist', [1], ['servername', 'serverip'])
+  session.send('幻兽帕鲁-服务器列表 \n' + String(list) + ' \n收录你的服务器？请发送服务器收录')
+})
 
-ctx.command('/服务器列表')
-  return '当前已收录的服务器有：'
 }
