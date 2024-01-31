@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-palworld-tools",
   "description": "幻兽帕鲁工具箱。",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "MeowsSauce <meowsauce@hotmail.com>",
   "repository": "https://github.com/MeowsSauce/koishi-plugin-palworld-tools",
   "main": "lib/index.js",
